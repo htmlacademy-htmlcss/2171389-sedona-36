@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Нина Феоктистова](https://up.htmlacademy.ru/htmlcss/36/user/2171389).
-* Наставник: `Виктория Никитина (https://htmlacademy.ru/profile/id1217273) `.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273) .
 
 ---
 

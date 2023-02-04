@@ -2,12 +2,12 @@
   font-family: "PT sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT sans";
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-style: bold;
   font-weight: 700;
   font-display: swap;
@@ -16,4 +16,74 @@ body {
   font-family: "PT sans", sans-serif;
   font-size: 22px;
   line-height:26px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff
+}
+.page-header {
+
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.favourite-option {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  padding: 4px 5px;
+}
+.button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+.button-small {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 50px;
+}
+.welcome {
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #000000;
+  background-color: #ffffff
+}
+.advantages-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-subtitle {
+  font-size: 24px;
+  line-height: 28px
+}
+.advantages-list .advantages-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }

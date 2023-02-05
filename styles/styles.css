@@ -17,7 +17,7 @@ body {
   font-size: 22px;
   line-height:26px;
   text-align: center;
-  color: #000000;
+  color: #333333;
   background-color: #ffffff
 }
 .page-header {
@@ -48,7 +48,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -60,16 +59,21 @@ body {
 .button-small {
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 50px;
+}
+.subscribe-button {
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 .welcome {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #000000;
-  background-color: #ffffff
+  background-color: #6999C1
 }
-.advantages-title {
+.advantages-title,
+.services-title,
+.booking-title {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -77,13 +81,58 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.advantages-subtitle {
+.advantages-subtitle,
+.services-subtitle {
   font-size: 24px;
   line-height: 28px
 }
-.advantages-list .advantages-description {
+.advantages-list {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
+}
+.background-blue {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+.background-lightblue {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+.background-stillblue {
+  background-color:  rgba(131, 179, 211, 0.2);
+  color:#000000
+}
+.services-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+.subscribe {
+  color: #ffffff;
+  background-color: #6999C1;
+  background-image: url("../images/Subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.field {
+  background-color: #F2F2F2;
+  color: #000000;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }

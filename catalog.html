@@ -136,6 +136,7 @@
         </section>
         </div>
         <section class="search-results">
+          <div class="sorting-container">
           <h2 class="results-title">Найдено гостиниц:38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
@@ -144,69 +145,74 @@
           </select>
           <ul class="shown-option">
             <li>
-              <a class="button button-active" href="#">
+              <a class="shown-button shown-button-light" href="#">
                 <span class="visually-hidden">Показать плитку</span>
               </a>
             </li>
             <li>
-              <a class="button" href="#">
+              <a class="shown-button" href="#">
                 <span class="visually-hidden">Показать слайдшоу</span>
               </a>
             </li>
             <li>
-              <a class="button" href="#">
+              <a class="shown-button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
             </li>
           </ul>
+          </div>
           <ul class="product-list">
             <li class="product-card">
-              <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300px" height="212px"
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300px" height="212px"
                 alt="Тоннель к звездам">
-              <h3 class="product-card-title">Amara Resort & Spa</h3>
+              <h3 class="product-card-title">Amara Resort & Spa</h3></a>
               <p class="product-card-text">Гостиница</p>
               <p class="product-card-text">От 4000 ₽</p>
               <a class="button button-small" href="#">Подробнее</a>
-              <button class="button" type="submit">В избранное</button>
+              <button class="button favourite-button" type="submit">В избранное</button>
               <p class="product-grade product-grade-4">
                 <span class="visually-hidden"> 4 звезды</span>
               </p>
               <span class="product-rating">Рейтинг: 8,5</span>
             </li>
             <li class="product-card">
-              <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300px" height="212px"
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300px" height="212px"
                 alt="Горы и радуга">
-              <h3 class="product-card-title">Villas at Poco Diablo</h3>
+              <h3 class="product-card-title">Villas at Poco Diablo</h3></a>
               <p class="product-card-text">Гостиница</p>
               <p class="product-card-text">От 5000 ₽</p>
               <a class="button button-small" href="#">Подробнее</a>
-              <button class="button button-active" type="submit">В избранном</button>
+              <button class="button favourite-button-active" type="submit">В избранном</button>
               <p class="product-grade product-grade-4">
                 <span class="visually-hidden"> 4 звезды</span>
               </p>
               <span class="product-rating">Рейтинг: 9,2</span>
             </li>
             <li class="product-card">
+              <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-3.jpg" width="300px" height="212px"
                 alt="Вид на гору">
-              <h3 class="product-card-title">Desert Quail Inn</h3>
+              <h3 class="product-card-title">Desert Quail Inn</h3></a>
               <p class="product-card-text">Гостиница</p>
               <p class="product-card-text">От 2500 ₽</p>
               <a class="button button-small" href="#">Подробнее</a>
-              <button class="button" type="submit">В избранное</button>
+              <button class="button favourite-button" type="submit">В избранное</button>
               <p class="product-grade product-grade-3">
                 <span class="visually-hidden"> 3 звезды</span>
               </p>
               <span class="product-rating">Рейтинг: 6,9</span>
             </li>
             <li class="product-card">
-              <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300px" height="212px"
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300px" height="212px"
                 alt="Гора на фоне звездного неба">
-              <h3 class="product-card-title">GreenTree Inn</h3>
+              <h3 class="product-card-title">GreenTree Inn</h3></a>
               <p class="product-card-text">Гостиница</p>
               <p class="product-card-text">От 1500 ₽</p>
               <a class="button button-small" href="#">Подробнее</a>
-              <button class="button" type="submit">В избранное</button>
+              <button class="button favourite-button" type="submit">В избранное</button>
               <p class="product-grade product-grade-2">
                 <span class="visually-hidden"> 2 звезды</span>
               </p>
@@ -234,29 +240,29 @@
             </li>
           </ol>
         </section>
-        <section class="subscribe catalog-subscribe">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe=description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="catalog-subscribe">
+          <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-catalog-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="#" method="post">
             <input class="field" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
-            <button class="button" type="submit">Подписаться</button>
+            <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
     </main>
     <footer class="page-footer">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
+          <a class="vk-icon" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
+          <a class="tg-icon" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Telegramm</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="yt-icon" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>

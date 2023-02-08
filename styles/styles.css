@@ -19,16 +19,12 @@ body {
   color: #333333;
   background-color: #ffffff
 }
-.page-header {
-
-}
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: #000000;
-  text-transform: capitalize;
   text-decoration: none;
 }
 
@@ -45,8 +41,8 @@ body {
 }
 .button {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -56,14 +52,39 @@ body {
   border-radius: 4px;
   padding: 8px 50px;
 }
-.button-small {
-  font-size: 16px;
-  line-height: 20px;
+.booking-button {
+  font-size: 20px;
+  line-height: 36px;
 }
 .subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
   color: #ffffff;
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
+}
+.accept-button {
+  background-color: #82B3D3;
+}
+.reset-button {
+  background-color: transparent;
+}
+.shown-button {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  text-decoration: none;
+  color:#000000;
+}
+.shown-button-active {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+.favourite-button {
+  background: #82B3D3;
+}
+.favourite-button-active {
+  background: #7DB54F;
+
 }
 .main-index {
   text-align: center;
@@ -88,8 +109,11 @@ body {
 }
 .advantages-subtitle,
 .services-subtitle {
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
   color: #000000;
 }
 .advantages-list {
@@ -99,15 +123,15 @@ body {
   line-height: 21px;
   text-align: center;
 }
-.background-blue {
+.blue {
   background-color: #82B3D3;
   color: #ffffff;
 }
-.background-lightblue {
+.lightblue {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
-.background-stillblue {
+.stillblue {
   background-color:  rgba(131, 179, 211, 0.2);
   color:#000000
 }
@@ -137,16 +161,11 @@ body {
 .field {
   background-color: #F2F2F2;
   color: #000000;
-  opacity: 0.6;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   border-radius: 4px 0 0 4px;
   border-width: 0;
-}
-.page-footer {
-  color: #000000;
-  background-color: #ffffff;
 }
 .vk-icon {
   background-image: url("../images/Icons/vk.svg");
@@ -168,11 +187,11 @@ body {
   font-size: 40px;
   line-height: 40px;
 }
-.filters-block-container {
+.filters-container {
   background-color: #6999C1;
   color:#ffffff;
   background-image: url("../images/filter.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .catalog-title {
@@ -196,20 +215,6 @@ body {
 .control-input {
   font-size: 18px;
   line-height: 23px;
-}
-.accept-button {
-  background-color: #82B3D3;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  border-color: #82B3D3;
-}
-.reset-button {
-  background-color: transparent;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  border-color: transparent;
 }
 .results-title {
   font-weight: 700;
@@ -235,40 +240,15 @@ body {
 .shown-option {
 list-style: none;
 }
-.shown-button {
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-  text-decoration: none;
-  color:#000000;
-}
-.shown-button-light {
-  border: 2px solid #000000;
-  border-radius: 4px;
-}
 .product-list {
   list-style: none;
-}
-.product-card {
-  color: #333333;
-  background-color: #ffffff;
 }
 .product-card-text {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
-.favourite-button {
-  background: #82B3D3;
-  font-size: 16px;
-  line-height: 20px;
-  border-width: 0;
-}
-.favourite-button-active {
-  background: #7DB54F;
-  font-size: 16px;
-  line-height: 20px;
-  border-width: 0;
-}
+
 .product-rating {
   font-weight: 400;
   font-size: 16px;
@@ -277,7 +257,6 @@ list-style: none;
   text-transform: uppercase;
   background: #F2F2F2;
   border-radius: 4px;
-  border-width: 0;
 }
 .pagination {
   list-style: none;

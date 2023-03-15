@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico" type=”image/x-icon”>
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -56,7 +58,7 @@
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-image" src="images/photo-1.jpg" width="800" height="384" alt="Улицы Седоны.">
+              <img class="advantages-image" src="images/sedona-city.jpg" width="800" height="384" alt="Улицы Седоны.">
             </li>
             <li class="advantages-item lightblue">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -71,7 +73,7 @@
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item blue">
-              <img class="advantages-image" src="images/photo-2.jpg" width="800" height="385"
+              <img class="advantages-image" src="images/devils-bridge.jpg" width="800" height="385"
                 alt="Природный мост с ошеломительным видом на каньон.">
               <div class="advantages-wrapper">
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
@@ -167,7 +169,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -175,29 +177,24 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <ul class="search-form-list">
               <li class="search-form-item">
-                <label class="search-request-title" for="check-in-date">
-                  Дата заезда:
-                </label>
+                <label class="search-request-title" for="check-in-date">Дата заезда:</label>
                 <input type="text" class="search-form-input" id="check-in-date" name="check-in-date"
                   value="27 апреля 2020" placeholder="Укажите дату">
                 <p class="modal-text modal-text-failed">Мы не можем отправить вас в прошлое.</p>
                 <span class="calendar-button"></span>
               </li>
               <li class="search-form-item">
-                <label class="search-request-title" for="check-out-date">
-                  Дата выезда:
-                </label>
+                <label class="search-request-title" for="check-out-date">Дата выезда:</label>
                 <input type="text" class="search-form-input" id="check-out-date" name="check-out-date"
                   value="1 сентября 2023" placeholder="Укажите дату">
                 <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
                 <span class="calendar-button"></span>
               </li>
               <li class="search-form-item">
-                <label class="search-request-title" for="adult-amount">
-                  Взрослые:
-                </label>
+                <label class="search-request-title" for="adult-amount">Взрослые:</label>
                 <div class="guests-amount-container">
-                  <button class="search-form-button minus-button">
+                  <button class="search-form-button minus-button" type="button">
+                    <span class="visually-hidden">Уменьшить на одного количество взрослых гостей</span>
                     <svg class="button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="" />
@@ -205,34 +202,38 @@
                   </button>
                   <input type="number" class="search-form-input guests-amount-input" id="adult-amount"
                     name="adult-amount" value="2">
-                  <button class="search-form-button plus-button"><svg class="button-icon" width="20" height="20"
-                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <button class="search-form-button plus-button" type="button">
+                    <span class="visually-hidden">Увеличить на одного количество взрослых гостей</span>
+                    <svg class="button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="" />
                     </svg>
                   </button>
                 </div>
               </li>
               <li class="search-form-item">
-                <label class="search-request-title" for="children-amount">
-                  Дети:
-                </label>
+                <label class="search-request-title children-label" for="children-amount">Дети:</label>
                 <div class="tooltip">
-                  <button class="tooltip-button"></button>
-                  <div class="tooltip-content">
+                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-children-guests"></button>
+                  <div class="tooltip-content" role="tooltip" id="tooltip-children-guests">
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
                     размещаются бесплатно.
                   </div>
                 </div>
                 <div class="guests-amount-container">
-                  <button class="search-form-button minus-button"><svg class="button-icon" width="20" height="20"
-                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <button class="search-form-button minus-button" type="button">
+                    <span class="visually-hidden">Уменьшить на одного количество детей</span>
+                    <svg class="button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="" />
                     </svg>
                   </button>
                   <input type="number" class="search-form-input guests-amount-input" id="children-amount"
                     name="children-amount" value="2">
-                  <button class="search-form-button plus-button"><svg class="button-icon" width="20" height="20"
-                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <button class="search-form-button plus-button" type="button">
+                    <span class="visually-hidden">Увеличить на одного количество детей</span>
+                    <svg class="button-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="" />
                     </svg>
                   </button>

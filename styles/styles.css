@@ -184,6 +184,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.button-disabled {
+  background-color: #e5e5e5;
+}
+
 .header-button {
   margin-top: 14px;
   padding: 8px 34px;
@@ -435,6 +439,7 @@ body {
 .button-details:hover,
 .button-details:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .booking-button:active,
@@ -491,6 +496,7 @@ body {
 .favourite-button:hover,
 .favourite-button:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 
@@ -501,7 +507,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.field {
+.subscribe-field {
   font-family: inherit;
   width: 450px;
   padding-left: 20px;
@@ -761,7 +767,7 @@ body {
   cursor: pointer;
 }
 
-.search-form-button:hover .button-icon{
+.search-form-button:hover .button-icon {
   fill: #000000;
 }
 
@@ -769,7 +775,7 @@ body {
   outline: none;
 }
 
-.search-form-button:focus-visible .button-icon{
+.search-form-button:focus-visible .button-icon {
   fill: #000000;
   outline: 3px solid #82b3d3;
   border-radius: 4px;
@@ -857,7 +863,7 @@ input[type=number] {
 .tooltip-content::before {
   position: absolute;
   content: "";
-  top:-5px;
+  top: -5px;
   left: 118px;
   width: 19px;
   height: 19px;
@@ -1072,29 +1078,28 @@ input[type=number] {
 }
 
 
-.infrastructure .control-input {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-}
-
-.infrastructure .control-input:hover {
+.control-input:hover + .control-label-checkbox {
   opacity: 0.6;
-  color: rgba(255, 255, 255, 0.6);
 }
 
-.infrastructure .control-input:focus {
-  border: 3px solid #83b3d3;
+.control-input:focus + .control-label-checkbox::before {
+  outline: 3px solid #83b3d3;
 }
 
-.infrastructure .control-input:active {
+.control-input:active + .control-label-checkbox {
   opacity: 0.3;
-  color: rgba(255, 255, 255, 0.3);
 }
 
-.housing-type .control-input {
-  width: 20px;
-  height: 20px;
+.control-input:hover + .control-label-radio {
+  opacity: 0.6;
+}
+
+.control-input:focus + .control-label-radio::before {
+  outline: 3px solid #83b3d3;
+}
+
+.control-input:active + .control-label-radio {
+  opacity: 0.3;
 }
 
 .catalog-filter-price {
@@ -1108,6 +1113,15 @@ input[type=number] {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.catalog-filter-price:hover {
+  background-color: #e6e6e6;
+}
+
+.catalog-filter-price:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .control-price {
@@ -1203,7 +1217,7 @@ input[type=number] {
 }
 
 .reset-button:hover {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .reset-button:focus {
@@ -1211,11 +1225,11 @@ input[type=number] {
 }
 
 .reset-button:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reset-button:disabled {
-  opacity: 0.1;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .filter-buttons {
@@ -1272,14 +1286,10 @@ input[type=number] {
   outline: none;
 }
 
-.select-control:active {
-  border: 2px solid #3f5e72;
-}
-
 .select-control:disabled {
-  outline: none;
   border: 2px solid rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
+  outline: none;
 }
 
 .select-control-option {
@@ -1313,6 +1323,7 @@ input[type=number] {
 
 .shown-button:focus {
   border: 2px solid #68a2ca;
+  outline: none;
 }
 
 
@@ -1434,6 +1445,7 @@ input[type=number] {
 .favourite-button-active:hover,
 .favourite-button-active:focus {
   background-color: #6c9e42;
+  outline: none;
 }
 
 .favourite-button-active:active {

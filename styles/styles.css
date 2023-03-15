@@ -180,10 +180,6 @@ body {
   cursor: pointer;
 }
 
-.button:disabled {
-  background-color: #e5e5e5;
-}
-
 .button-disabled {
   background-color: #e5e5e5;
 }
@@ -449,6 +445,12 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.booking-button:disabled,
+.header-button:disabled,
+.button-details:disabled {
+  background-color: #e5e5e5;
+}
+
 .subscribe {
   margin: 0;
   padding: 96px 258px 104px;
@@ -499,12 +501,18 @@ body {
   outline: none;
 }
 
-
 .subscribe-button:active,
 .accept-button:active,
 .favourite-button:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+
+.subscribe-button:disabled,
+.accept-button:disabled,
+.favourite-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .subscribe-field {
@@ -518,6 +526,15 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.subscribe-field:hover {
+  background-color: #e6e6e6;
+}
+
+.subscribe-field:focus {
+  background-color: #e6e6e6;
+  outline: 1px solid #83b3d3;
 }
 
 .page-footer {
@@ -546,8 +563,11 @@ body {
   padding: 0 10px;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-icon:hover {
+  fill: #68a2ca;
+}
+
+.footer-social-link:focus .social-icon {
   fill: #68a2ca;
 }
 
@@ -1019,15 +1039,6 @@ input[type=number] {
   margin-bottom: 27px;
 }
 
-
-
-.control-input {
-  margin: 0;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 23px;
-}
-
 .control {
   padding-left: 36px;
   display: block;
@@ -1040,7 +1051,7 @@ input[type=number] {
 .control-label-checkbox::before {
   position: absolute;
   content: "";
-  top: 1px;
+  top: 3px;
   left: -36px;
   width: 20px;
   height: 20px;
@@ -1062,8 +1073,8 @@ input[type=number] {
 .control-label-radio::before {
   position: absolute;
   content: "";
-  top: 1px;
-  left: -36px;
+  top: 3px;
+  left: -34px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -1090,6 +1101,10 @@ input[type=number] {
   opacity: 0.3;
 }
 
+.control-input:disabled + .control-label-checkbox {
+  opacity: 0.3;
+}
+
 .control-input:hover + .control-label-radio {
   opacity: 0.6;
 }
@@ -1102,10 +1117,14 @@ input[type=number] {
   opacity: 0.3;
 }
 
+.control-input:disabled + .control-label-radio {
+  opacity: 0.3;
+}
+
 .catalog-filter-price {
   box-sizing: border-box;
   width: 143px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   border: none;
   font-family: inherit;
   background-color: #f2f2f2;
@@ -1229,6 +1248,7 @@ input[type=number] {
 }
 
 .reset-button:disabled {
+  background-color: transparent;
   color: rgba(255, 255, 255, 0.1);
 }
 
@@ -1251,9 +1271,9 @@ input[type=number] {
 }
 
 .results-title {
-  width: 338px;
+  width: 488px;
   margin: 0;
-  margin-right: 200px;
+  margin-right: 50px;
   margin-top: 5px;
   font-weight: 700;
   font-size: 30px;
@@ -1452,6 +1472,10 @@ input[type=number] {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.favourite-button-active:disabled {
+  background-color: #e5e5e5;
+}
+
 .product-stars {
   display: inline-block;
   grid-column: 1/2;
@@ -1511,8 +1535,10 @@ input[type=number] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
+  padding: 0 18px;
+  box-sizing: border-box;
   border-radius: 4px;
   font-weight: 700;
   font-size: 20px;

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
-
   <body>
     <div class="page-container">
       <header class="page-header">
@@ -120,10 +120,10 @@
                 <div class="range-block">
                   <div class="scale">
                     <div class="range">
-                      <button class="range-handle range-min">
+                      <button class="range-handle range-min" type="button">
                         <span class="visually-hidden">Установить минимальную цену</span>
                       </button>
-                      <button class="range-handle range-max">
+                      <button class="range-handle range-max" type="button">
                         <span class="visually-hidden">Установить максимальную цену</span>
                       </button>
                     </div>
@@ -141,7 +141,7 @@
           <div class="sorting-container">
             <h2 class="results-title">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
-              <option class="select-control-option" value="cheap">Сначала дешёвые</option>
+              <option class="select-control-option" value="cheap">Сначала дешевые</option>
               <option class="select-control-option" value="expensive">Сначала дорогие</option>
               <option class="select-control-option" value="popular">Сначала популярные</option>
             </select>
@@ -175,7 +175,7 @@
               <p class="product-card-text">Гостиница</p>
               <p class="product-card-text product-card-price">От 4000 ₽</p>
               <a class="button button-details" href="#">Подробнее</a>
-              <button class="button favourite-button" type="submit">В избранное</button>
+              <button class="button favourite-button" type="button">В избранное</button>
               <p class="product-stars product-stars-four">
                 <span class="visually-hidden"> 4 звезды</span>
               </p>
@@ -192,7 +192,7 @@
               <p class="product-card-text">Гостиница</p>
               <p class="product-card-text product-card-price">От 5000 ₽</p>
               <a class="button button-details" href="#">Подробнее</a>
-              <button class="button favourite-button-active" type="submit">В избранном</button>
+              <button class="button favourite-button-active" type="button">В избранном</button>
               <p class="product-stars product-stars-four">
                 <span class="visually-hidden"> 4 звезды</span>
               </p>
@@ -209,7 +209,7 @@
               <p class="product-card-text">Гостиница</p>
               <p class="product-card-text product-card-price">От 2500 ₽</p>
               <a class="button button-details" href="#">Подробнее</a>
-              <button class="button favourite-button" type="submit">В избранное</button>
+              <button class="button favourite-button" type="button">В избранное</button>
               <p class="product-stars product-stars-three">
                 <span class="visually-hidden"> 3 звезды</span>
               </p>
@@ -226,7 +226,7 @@
               <p class="product-card-text">Гостиница</p>
               <p class="product-card-text product-card-price">От 1500 ₽</p>
               <a class="button button-details" href="#">Подробнее</a>
-              <button class="button favourite-button" type="submit">В избранное</button>
+              <button class="button favourite-button" type="button">В избранное</button>
               <p class="product-stars product-stars-two">
                 <span class="visually-hidden"> 2 звезды</span>
               </p>
@@ -303,6 +303,7 @@
           <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <a class="footer-copyright" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Логотип HTML academy</span>
           <svg class="footer-copyright-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
             width="115" height="34" fill="none">
             <path fill=""
@@ -312,5 +313,4 @@
       </footer>
     </div>
   </body>
-
 </html>

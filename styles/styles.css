@@ -575,18 +575,6 @@ body {
   padding: 0 10px;
 }
 
-.social-icon:hover {
-  fill: #68a2ca;
-}
-
-.footer-social-link:focus .social-icon {
-  fill: #68a2ca;
-}
-
-.social-icon:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .social-icon {
   position: absolute;
   top: 0;
@@ -595,6 +583,18 @@ body {
   left: 0;
   margin: auto;
   fill: #83b3d3
+}
+
+.footer-social-link:hover .social-icon {
+  fill: #68a2ca;
+}
+
+.footer-social-link:focus .social-icon {
+  fill: #68a2ca;
+}
+
+.footer-social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts-container {
